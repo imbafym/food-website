@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/queries.css">
 
-    <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 
@@ -419,76 +419,92 @@
         </div>
     </section>
 
-    <section class="section-form clearfix ">
+    <section class="map-box">
         <div class="map"></div>
-        <div class="row">
-            <h2>
-                We're happy to hear from you
-            </h2>
-        </div>
-        <div class="row">
-            <form method="post" action="#" class="contact-form">
-                <div class="row">
-                    <div class="col span_1_of_3">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="col span_2_of_3">
-                        <input type="text" name="name" id="name" placeholder="your name" required>
-                    </div>
 
-                </div>
-                <div class="row">
-                    <div class="col span_1_of_3">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col span_2_of_3">
-                        <input type="email" name="email" id="email" placeholder="your email" required>
-                    </div>
+        <div class="form-box ">
+            <div class="row">
+                <h2>
+                    We're happy to hear from you
+                </h2>
+            </div>
+            <!-- <div class="row">
+                <?php
+                if($_GET['success']==1){
+                    echo " <div class=\"form-messages success\">Thanks! Message has been sent!</div>";
+                }
+                if($_GET['success']==-1){
+                    echo "  <div class=\"form-messages error\">Opps! Something went wrong. Try it again!</div>";
+                }
+                ?>
+                
+            </div> -->
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
 
-                </div>
-                <div class="row">
-                    <div class="col span_1_of_3">
-                        <label>How did your find us</label>
-                    </div>
-                    <div class="col span_2_of_3">
-                        <select name="find-us" id="find-us">
-                            <option value="friends">friends</option>
-                            <option value="university" selected>university</option>
-                            <option value="social_media">social media</option>
+                        <div class="col span_1_of_3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <input type="text" name="name" id="name" placeholder="your name" required>
+                        </div>
 
-                        </select>
                     </div>
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <input type="email" name="email" id="email" placeholder="your email" required>
+                        </div>
 
-                </div>
-                <div class="row">
-                    <div class="col span_1_of_3">
-                        <label for="news">News letter</label>
                     </div>
-                    <div class="col span_2_of_3">
-                        <input type="checkbox" name="news" id="news">Yes, Please
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label>How did your find us</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends">friends</option>
+                                <option value="university" selected>university</option>
+                                <option value="social_media">social media</option>
+
+                            </select>
+                        </div>
+
                     </div>
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label for="news">News letter</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <input type="checkbox" name="news" id="news">Yes, Please
+                        </div>
 
 
-                </div>
-                <div class="row">
-                    <div class="col span_1_of_3">
-                        <label>Drop us a line</label>
                     </div>
-                    <div class="col span_2_of_3">
-                        <textarea name="message" placeholder="Your message"></textarea>
-                    </div>
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
 
 
-                </div>
-                <div class="row">
-                    <div class="col span_1_of_3">
-                        <label >&nbsp;</label>
                     </div>
-                    <div class="col span_2_of_3">
-                        <input type="submit" value="Send it!">
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <input type="submit" value="Send it!">
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
+
         </div>
 
     </section>
@@ -553,13 +569,13 @@
     </footer>
 
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script> -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr.js"></script>
     <script src="resources/js/jquery.waypoints.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
     <script src="resources/js/gmaps.js"></script>
 
 
